@@ -11,9 +11,4 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({
-	require("jeffreythor/plugins/telescope"),
-	require("jeffreythor/plugins/tokyonight"),
-	require("jeffreythor/plugins/treesitter"),
-	require("jeffreythor/plugins/lsp")
-}, {})
+require("lazy").setup("jeffreythor.plugins", {})
