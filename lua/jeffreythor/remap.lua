@@ -11,3 +11,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+-- Clear highlighted search
+vim.keymap.set("n", "<C-l>", ":nohl<CR>")
+
